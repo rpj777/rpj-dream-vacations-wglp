@@ -6,6 +6,7 @@ export const runtime = "edge" // Use edge runtime for faster responses
 export async function POST(req: Request) {
   const { messages } = await req.json()
 
+  // The openai() function automatically uses the OPENAI_KEY environment variable.
   const result = await streamText({
     model: openai("gpt-4o"), // Using gpt-4o as a powerful general model
     messages,
