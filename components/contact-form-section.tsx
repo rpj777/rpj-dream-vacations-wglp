@@ -45,13 +45,13 @@ export function ContactFormSection() {
   }
 
   return (
-    <section id="contact" className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-t from-white to-blue-50">
+    <section id="contact" className="w-full py-8 md:py-16 lg:py-32 bg-gradient-to-t from-white to-blue-50">
       <div className="container px-4 md:px-6 flex flex-col items-center">
         <div className="text-center space-y-4 mb-8">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-blue-800">
+          <h2 className="text-2xl md:text-3xl lg:text-5xl font-bold tracking-tight text-blue-800">
             Ready to Plan Your Dream Vacation?
           </h2>
-          <p className="max-w-2xl mx-auto text-lg text-gray-700">
+          <p className="max-w-2xl mx-auto text-base md:text-lg text-gray-700">
             Contact Richard Johnson today for a personalized consultation. Let's make your travel dreams a reality!
           </p>
         </div>
@@ -108,7 +108,10 @@ export function ContactFormSection() {
                   rows={4}
                 />
               </div>
-              <Button type="submit" className="w-full bg-blue-600 hover:bg-blue-700 text-white text-lg py-3">
+              <Button
+                type="submit"
+                className="w-full bg-blue-600 hover:bg-blue-700 text-white text-base py-2 md:text-lg md:py-3"
+              >
                 Submit Inquiry
               </Button>
             </form>

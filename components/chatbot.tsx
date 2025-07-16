@@ -52,7 +52,7 @@ export function Chatbot() {
       )}
 
       {isOpen && (
-        <Card className="fixed bottom-6 right-6 w-[calc(100%-2rem)] max-w-md h-[500px] flex flex-col shadow-2xl rounded-lg z-50 bg-white border border-blue-200">
+        <Card className="fixed bottom-6 right-6 w-[calc(100%-2rem)] max-w-sm sm:max-w-md h-[450px] sm:h-[500px] flex flex-col shadow-2xl rounded-lg z-50 bg-white border border-blue-200">
           <CardHeader className="flex flex-row items-center justify-between p-4 border-b bg-blue-600 text-white rounded-t-lg">
             <CardTitle className="text-lg font-semibold">Dream Vacations Chat</CardTitle>
             <Button

@@ -3,10 +3,10 @@ import { PhoneIcon, MailIcon, MapPinIcon } from "lucide-react"
 
 export function Footer() {
   return (
-    <footer className="bg-blue-800 text-white py-8 md:py-12">
-      <div className="container px-4 md:px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
+    <footer className="bg-blue-800 text-white py-6 md:py-12">
+      <div className="container px-4 md:px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
         <div className="space-y-4">
-          <h3 className="text-xl font-bold">Dream Vacations</h3>
+          <h3 className="text-lg md:text-xl font-bold">Dream Vacations</h3>
           <p className="text-sm text-blue-200">
             Your trusted travel agent in Winter Garden, FL, crafting personalized dream vacations.
           </p>
@@ -16,7 +16,7 @@ export function Footer() {
           </div>
         </div>
         <div className="space-y-4">
-          <h3 className="text-xl font-bold">Quick Links</h3>
+          <h3 className="text-lg md:text-xl font-bold">Quick Links</h3>
           <nav className="flex flex-col space-y-2">
             <Link href="#" className="text-sm text-blue-200 hover:underline">
               Home
@@ -33,7 +33,7 @@ export function Footer() {
           </nav>
         </div>
         <div className="space-y-4">
-          <h3 className="text-xl font-bold">Contact Us</h3>
+          <h3 className="text-lg md:text-xl font-bold">Contact Us</h3>
           <div className="flex flex-col space-y-2">
             <Link href="tel:+14075551234" className="flex items-center gap-2 text-sm text-blue-200 hover:underline">
               <PhoneIcon className="h-5 w-5" />

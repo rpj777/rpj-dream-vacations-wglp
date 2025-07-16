@@ -2,20 +2,20 @@ import Image from "next/image"
 
 export function AboutSection() {
   return (
-    <section id="about" className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-b from-white to-blue-50">
+    <section id="about" className="w-full py-8 md:py-16 lg:py-32 bg-gradient-to-b from-white to-blue-50">
       <div className="container px-4 md:px-6">
         <div className="grid gap-10 lg:grid-cols-2 items-center">
           <div className="space-y-4">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-blue-800">
+            <h2 className="text-2xl md:text-3xl lg:text-5xl font-bold tracking-tight text-blue-800">
               About Richard Johnson & Dream Vacations
             </h2>
-            <p className="text-lg text-gray-700 leading-relaxed">
+            <p className="text-base md:text-lg text-gray-700 leading-relaxed">
               Welcome to Dream Vacations by Richard Johnson, your dedicated travel partner based right here in Winter
               Garden, FL. With years of experience and a passion for exploration, I specialize in transforming your
               travel dreams into seamless realities. From serene beach getaways to thrilling adventure tours, I handle
               every detail, ensuring a stress-free and memorable experience.
             </p>
-            <p className="text-lg text-gray-700 leading-relaxed">
+            <p className="text-base md:text-lg text-gray-700 leading-relaxed">
               My commitment is to provide personalized service, understanding your unique preferences to curate the
               perfect itinerary. As a local Winter Garden travel agent, I pride myself on building lasting relationships
               and offering expert advice tailored to your needs. Let's embark on your next adventure together!

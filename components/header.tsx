@@ -5,12 +5,12 @@ import { SheetTrigger, SheetContent, Sheet } from "@/components/ui/sheet"
 
 export function Header() {
   return (
-    <header className="px-4 lg:px-6 h-16 flex items-center bg-gradient-to-r from-blue-600 to-blue-400 text-white shadow-md">
+    <header className="px-4 md:px-6 h-16 flex items-center bg-gradient-to-r from-blue-600 to-blue-400 text-white shadow-md">
       <Link href="#" className="flex items-center justify-center gap-2">
         <MountainIcon className="h-6 w-6" />
-        <span className="text-lg font-bold">Dream Vacations</span>
+        <span className="text-base md:text-lg font-bold">Dream Vacations</span>
       </Link>
-      <nav className="ml-auto hidden lg:flex gap-6">
+      <nav className="ml-auto hidden lg:flex gap-4 lg:gap-6">
         <Link href="#" className="text-sm font-medium hover:underline underline-offset-4">
           Home
         </Link>
