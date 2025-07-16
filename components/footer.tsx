@@ -53,7 +53,7 @@ export function Footer() {
         &copy; {new Date().getFullYear()} Dream Vacations by Richard Johnson & Travel Advisors Group. All rights
         reserved.<br/> Dream Vacations A division of World Travel Holdings. A CruiseOne Company.
 CruiseOne franchises are independently owned and operated, and its franchisees are independent contractors.
-Seller of Travel Numbers CST 2006278-40 WA 601698664 FL ST-35829
+Seller of Travel Number FL ST-TI87681
       </div>
     </footer>
   )
