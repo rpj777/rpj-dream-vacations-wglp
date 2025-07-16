@@ -11,9 +11,9 @@ export function Header() {
         <Image
           src="/dv-logo-white.png"
           alt="Dream Vacations by Richard Johnson & Travel Advisors Group Logo"
-          width={180} // Adjust width as needed for optimal display
-          height={40} // Adjust height as needed
-          className="h-auto w-auto" // Maintain aspect ratio and allow responsiveness
+          width={160} // Adjusted width
+          height={36} // Adjusted height
+          className="object-contain" // Ensure it fits within the space
           priority // Prioritize loading for LCP
         />
       </Link>
