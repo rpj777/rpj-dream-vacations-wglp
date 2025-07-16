@@ -18,6 +18,7 @@ export function ContactFormSection() {
     preferredTrip: "",
   })
   const [status, setStatus] = useState("")
+  const [isSubmitting, setIsSubmitting] = useState(false)
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { id, value } = e.target
@@ -29,19 +30,38 @@ export function ContactFormSection() {
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
-    setStatus("Submitting...")
-    // In a real application, you would send this data to a backend API or Server Action.
-    // For this example, we'll simulate a successful submission.
-    console.log("Form Data Submitted:", formData)
-    await new Promise((resolve) => setTimeout(resolve, 1500)) // Simulate network request
-    setStatus("Thank you for your inquiry! Richard will be in touch shortly.")
-    setFormData({
-      name: "",
-      email: "",
-      phone: "",
-      message: "",
-      preferredTrip: "",
-    })
+    setIsSubmitting(true)
+    setStatus("Submitting your inquiry...")
+
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      })
+
+      const result = await response.json()
+
+      if (response.ok) {
+        setStatus("Thank you for your inquiry! Richard will be in touch shortly.")
+        setFormData({
+          name: "",
+          email: "",
+          phone: "",
+          message: "",
+          preferredTrip: "",
+        })
+      } else {
+        setStatus(`Failed to send inquiry: ${result.error || "Unknown error"}`)
+      }
+    } catch (error) {
+      console.error("Form submission error:", error)
+      setStatus("An unexpected error occurred. Please try again later.")
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   return (
@@ -111,8 +131,9 @@ export function ContactFormSection() {
               <Button
                 type="submit"
                 className="w-full bg-blue-600 hover:bg-blue-700 text-white text-base py-2 md:text-lg md:py-3"
+                disabled={isSubmitting}
               >
-                Submit Inquiry
+                {isSubmitting ? "Sending..." : "Submit Inquiry"}
               </Button>
             </form>
           </CardContent>

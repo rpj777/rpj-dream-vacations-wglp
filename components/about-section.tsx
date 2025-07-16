@@ -7,10 +7,10 @@ export function AboutSection() {
         <div className="grid gap-10 lg:grid-cols-2 items-center">
           <div className="space-y-4">
             <h2 className="text-2xl md:text-3xl lg:text-5xl font-bold tracking-tight text-blue-800">
-              About Richard Johnson & Travel Advisors Group
+              About Richard Johnson Travel Advisors Group
             </h2>
             <p className="text-base md:text-lg text-gray-700 leading-relaxed">
-              Welcome to Dream Vacations by Richard Johnson & Travel Advisors Group, your dedicated travel partner based
+              Welcome to Dream Vacations by Richard Johnson Travel Advisors Group, your dedicated travel partner based
               right here in Winter Garden, FL. With years of experience and a passion for exploration, we specialize in
               transforming your travel dreams into seamless realities. From serene beach getaways to thrilling adventure
               tours, we handle every detail, ensuring a stress-free and memorable experience.

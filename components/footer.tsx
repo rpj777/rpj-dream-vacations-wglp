@@ -50,7 +50,7 @@ export function Footer() {
         </div>
       </div>
       <div className="container px-4 md:px-6 mt-8 pt-8 border-t border-blue-700 text-center text-sm text-blue-300">
-        &copy; {new Date().getFullYear()} Dream Vacations by Richard Johnson & Travel Advisors Group. All rights
+        &copy; {new Date().getFullYear()} Dream Vacations by Richard Johnson Travel Advisors Group. All rights
         reserved.<br/> Dream Vacations A division of World Travel Holdings. A CruiseOne Company.
 CruiseOne franchises are independently owned and operated, and its franchisees are independent contractors.
 Seller of Travel Number FL ST-TI87681
