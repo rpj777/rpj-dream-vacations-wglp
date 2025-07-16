@@ -2,7 +2,14 @@ import { Resend } from "resend"
 import { EmailTemplate } from "@/components/email-template"
 import type * as React from "react"
 
-const resend = new Resend(process.env.RESEND_API_KEY)
+// Ensure RESEND_API_KEY is available during build and runtime
+const resendApiKey = process.env.RESEND_API_KEY
+
+if (!resendApiKey) {
+  throw new Error("RESEND_API_KEY is not set in environment variables.")
+}
+
+const resend = new Resend(resendApiKey)
 
 export async function POST(request: Request) {
   try {
@@ -10,7 +17,7 @@ export async function POST(request: Request) {
     const { name, email, phone, preferredTrip, message } = formData
 
     const { data, error } = await resend.emails.send({
-      from: "Dream Vacations Contact <onboarding@resend.dev>", // Replace with your verified Resend domain
+      from: "Dream Vacations Contact <onboarding@resend.dev>", // IMPORTANT: Replace with your verified Resend domain email
       to: ["rpjohnson@dreamvacations.com"], // Recipient email address
       subject: `New Inquiry from Dream Vacations Website: ${name}`,
       react: EmailTemplate({ name, email, phone, preferredTrip, message }) as React.ReactElement,
