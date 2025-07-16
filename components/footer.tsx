@@ -6,9 +6,9 @@ export function Footer() {
     <footer className="bg-blue-800 text-white py-6 md:py-12">
       <div className="container px-4 md:px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
         <div className="space-y-4">
-          <h3 className="text-lg md:text-xl font-bold">Dream Vacations & Advisors</h3>
+          <h3 className="text-lg md:text-xl font-bold">Dream Vacations & Travel Advisors Group</h3>
           <p className="text-sm text-blue-200">
-            Your trusted travel agent in Winter Garden, FL, crafting personalized dream vacations.
+            Richard Johnson your trusted travel agent in Winter Garden, FL, crafting personalized dream vacations.
           </p>
           <div className="flex items-center gap-2 text-blue-200">
             <MapPinIcon className="h-5 w-5" />
@@ -35,16 +35,16 @@ export function Footer() {
         <div className="space-y-4">
           <h3 className="text-lg md:text-xl font-bold">Contact Us</h3>
           <div className="flex flex-col space-y-2">
-            <Link href="tel:+14075551234" className="flex items-center gap-2 text-sm text-blue-200 hover:underline">
+            <Link href="tel:+14079512398" className="flex items-center gap-2 text-sm text-blue-200 hover:underline">
               <PhoneIcon className="h-5 w-5" />
-              <span>+1 (407) 555-1234</span> {/* Replace with actual phone number */}
+              <span>+1 (407) 951-2398</span> {/* Replace with actual phone number */}
             </Link>
             <Link
-              href="mailto:richard@dreamvacations.com"
+              href="mailto:rpjohnson@dreamvacations.com"
               className="flex items-center gap-2 text-sm text-blue-200 hover:underline"
             >
               <MailIcon className="h-5 w-5" />
-              <span>richard@dreamvacations.com</span> {/* Replace with actual email */}
+              <span>rpjohnson@dreamvacations.com</span> {/* Replace with actual email */}
             </Link>
           </div>
         </div>
