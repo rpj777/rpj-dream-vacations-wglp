@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Image from "next/image" // Import Image component
 import { PhoneIcon, MailIcon, MapPinIcon } from "lucide-react"
 
 export function Footer() {
@@ -6,7 +7,15 @@ export function Footer() {
     <footer className="bg-blue-800 text-white py-6 md:py-12">
       <div className="container px-4 md:px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
         <div className="space-y-4">
-          <h3 className="text-lg md:text-xl font-bold">Dream Vacations & Travel Advisors Group</h3>
+          <Link href="#" className="flex items-center justify-start">
+            <Image
+              src="/dv-logo-white.png"
+              alt="Dream Vacations by Richard Johnson & Travel Advisors Group Logo"
+              width={140} // Adjust width as needed
+              height={36} // Adjust height as needed
+              className="h-auto w-auto mb-2" // Maintain aspect ratio
+            />
+          </Link>
           <p className="text-sm text-blue-200">
             Richard Johnson your trusted travel agent in Winter Garden, FL, crafting personalized dream vacations.
           </p>
@@ -50,10 +59,10 @@ export function Footer() {
         </div>
       </div>
       <div className="container px-4 md:px-6 mt-8 pt-8 border-t border-blue-700 text-center text-sm text-blue-300">
-        &copy; {new Date().getFullYear()} Dream Vacations by Richard Johnson Travel Advisors Group. All rights
-        reserved.<br/> Dream Vacations A division of World Travel Holdings. A CruiseOne Company.
-CruiseOne franchises are independently owned and operated, and its franchisees are independent contractors.
-Seller of Travel Number FL ST-TI87681
+        &copy; {new Date().getFullYear()} Dream Vacations by Richard Johnson Travel Advisors Group. All rights reserved.
+        <br /> Dream Vacations A division of World Travel Holdings. A CruiseOne Company. CruiseOne franchises are
+        independently owned and operated, and its franchisees are independent contractors. Seller of Travel Number FL
+        ST-TI87681
       </div>
     </footer>
   )

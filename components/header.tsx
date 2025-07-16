@@ -1,5 +1,6 @@
 import Link from "next/link"
-import { MountainIcon, MenuIcon } from "lucide-react"
+import Image from "next/image" // Import Image component
+import { MenuIcon } from "lucide-react" // Keep MenuIcon for mobile sheet
 import { Button } from "@/components/ui/button"
 import { SheetTrigger, SheetContent, Sheet } from "@/components/ui/sheet"
 
@@ -7,8 +8,14 @@ export function Header() {
   return (
     <header className="px-4 md:px-6 h-16 flex items-center bg-gradient-to-r from-blue-600 to-blue-400 text-white shadow-md">
       <Link href="#" className="flex items-center justify-center gap-2">
-        <MountainIcon className="h-6 w-6" />
-        <span className="text-base md:text-lg font-bold">Dream Vacations Travel Advisors Group</span>
+        <Image
+          src="/dv-logo-white.png"
+          alt="Dream Vacations by Richard Johnson & Travel Advisors Group Logo"
+          width={180} // Adjust width as needed for optimal display
+          height={40} // Adjust height as needed
+          className="h-auto w-auto" // Maintain aspect ratio and allow responsiveness
+          priority // Prioritize loading for LCP
+        />
       </Link>
       <nav className="ml-auto hidden lg:flex gap-4 lg:gap-6">
         <Link href="#" className="text-sm font-medium hover:underline underline-offset-4">
