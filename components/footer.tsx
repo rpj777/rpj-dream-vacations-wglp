@@ -6,7 +6,7 @@ export function Footer() {
     <footer className="bg-blue-800 text-white py-6 md:py-12">
       <div className="container px-4 md:px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
         <div className="space-y-4">
-          <h3 className="text-lg md:text-xl font-bold">Dream Vacations</h3>
+          <h3 className="text-lg md:text-xl font-bold">Dream Vacations & Advisors</h3>
           <p className="text-sm text-blue-200">
             Your trusted travel agent in Winter Garden, FL, crafting personalized dream vacations.
           </p>
@@ -50,7 +50,8 @@ export function Footer() {
         </div>
       </div>
       <div className="container px-4 md:px-6 mt-8 pt-8 border-t border-blue-700 text-center text-sm text-blue-300">
-        &copy; {new Date().getFullYear()} Dream Vacations by Richard Johnson. All rights reserved.
+        &copy; {new Date().getFullYear()} Dream Vacations by Richard Johnson & Travel Advisors Group. All rights
+        reserved.
       </div>
     </footer>
   )

@@ -6,12 +6,13 @@ import { ContactFormSection } from "@/components/contact-form-section"
 import { Footer } from "@/components/footer"
 // Import the Chatbot component
 import { Chatbot } from "@/components/chatbot"
+import { ExploreCtaSection } from "@/components/explore-cta-section"
 
 export default function Home() {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "TravelAgency",
-    name: "Dream Vacations by Richard Johnson",
+    name: "Dream Vacations by Richard Johnson & Travel Advisors Group",
     address: {
       "@type": "PostalAddress",
       streetAddress: "Winter Garden", // Specific address can be added if available
@@ -24,7 +25,7 @@ export default function Home() {
     telephone: "+1-407-555-1234", // Replace with actual phone number
     email: "richard@dreamvacations.com", // Replace with actual email
     description:
-      "Your trusted travel agent in Winter Garden, FL. Richard Johnson specializes in crafting personalized dream vacations, cruises, and all-inclusive getaways.",
+      "Your trusted travel agent in Winter Garden, FL. Richard Johnson & Travel Advisors Group specializes in crafting personalized dream vacations, European cruises, destination wedding packages, and all-inclusive getaways.",
     image: "https://your-domain.com/opengraph-image.png", // Replace with actual domain
     priceRange: "$$",
     areaServed: {
@@ -52,6 +53,7 @@ export default function Home() {
         <AboutSection />
         <ServicesSection />
         <ContactFormSection />
+        <ExploreCtaSection />
       </main>
       {/* Add the Chatbot component to the page */}
       <Chatbot />

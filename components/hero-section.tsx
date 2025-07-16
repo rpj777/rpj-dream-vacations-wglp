@@ -19,7 +19,8 @@ export function HeroSection() {
           Your Dream Vacation Starts Here
         </h1>
         <p className="max-w-3xl mx-auto text-base md:text-lg lg:text-2xl font-medium drop-shadow-md">
-          Richard Johnson: Your Expert Travel Agent in Winter Garden, FL, crafting personalized, unforgettable journeys.
+          Richard Johnson & Travel Advisors Group: Your Expert Travel Agent in Winter Garden, FL, crafting personalized,
+          unforgettable journeys.
         </p>
         <Link href="#contact">
           <Button className="bg-blue-500 hover:bg-blue-600 text-white text-base px-6 py-2 md:text-lg md:px-8 md:py-3 rounded-full shadow-lg transition-all duration-300 transform hover:scale-105">

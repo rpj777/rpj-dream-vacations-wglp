@@ -19,7 +19,7 @@ export function Chatbot() {
         id: "welcome",
         role: "assistant",
         content:
-          "Hello! I'm Richard Johnson from Dream Vacations. How can I help you plan your perfect getaway today? I specialize in European Cruises and Destination Wedding Packages!",
+          "Hello! I'm Richard Johnson from Dream Vacations by Richard Johnson & Travel Advisors Group. How can I help you plan your perfect getaway today? I specialize in European Cruises and Destination Wedding Packages!",
       },
     ],
   })
