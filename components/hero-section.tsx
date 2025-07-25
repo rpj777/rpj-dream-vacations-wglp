@@ -7,8 +7,8 @@ export function HeroSection() {
   return (
     <section className="relative w-full h-[500px] md:h-[600px] lg:h-[800px] flex items-center justify-center text-center text-white overflow-hidden">
       <Image
-        src="/tropical-beach-paradise.png"
-        alt="Tropical beach with clear blue water and palm trees"
+        src="/romantic-beach-walk.png" // Updated image source
+        alt="Couple walking on a beautiful tropical beach at sunset"
         layout="fill"
         objectFit="cover"
         quality={100}
