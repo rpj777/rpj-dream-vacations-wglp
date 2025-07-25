@@ -4,9 +4,9 @@ import { AboutSection } from "@/components/about-section"
 import { ServicesSection } from "@/components/services-section"
 import { ContactFormSection } from "@/components/contact-form-section"
 import { Footer } from "@/components/footer"
-// Import the Chatbot component
 import { Chatbot } from "@/components/chatbot"
 import { ExploreCtaSection } from "@/components/explore-cta-section"
+import { ScrollToTopButton } from "@/components/scroll-to-top-button" // Import the new component
 
 export default function Home() {
   const jsonLd = {
@@ -55,8 +55,8 @@ export default function Home() {
         <ContactFormSection />
         <ExploreCtaSection />
       </main>
-      {/* Add the Chatbot component to the page */}
       <Chatbot />
+      <ScrollToTopButton /> {/* Add the scroll-to-top button here */}
       <Footer />
     </div>
   )
