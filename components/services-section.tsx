@@ -1,4 +1,4 @@
-import { ShipIcon, HotelIcon, FanIcon as FamilyIcon, HeartIcon, CompassIcon, MapPinIcon } from "lucide-react"
+import { ShipIcon, HotelIcon, FanIcon as FamilyIcon, HeartIcon, CompassIcon, MapPinIcon, UsersIcon } from "lucide-react"
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card"
 
 export function ServicesSection() {
@@ -90,11 +90,12 @@ export function ServicesSection() {
             </CardHeader>
             <CardContent className="p-6 pt-0">
               <CardDescription className="text-gray-600">
-                For the couple or whole family. Fully customized travel plans to any destination, built around your unique desires.
+                For the couple or whole family. Fully customized travel plans to any destination, built around your
+                unique desires.
               </CardDescription>
             </CardContent>
           </Card>
-           <Card className="bg-white shadow-lg hover:shadow-xl transition-shadow duration-300">
+          <Card className="bg-white shadow-lg hover:shadow-xl transition-shadow duration-300">
             <CardHeader className="flex flex-col items-center text-center p-6">
               <CompassIcon className="h-12 w-12 text-blue-600 mb-4" />
               <CardTitle className="text-xl font-semibold text-blue-700">Adventure Travel</CardTitle>
@@ -102,6 +103,19 @@ export function ServicesSection() {
             <CardContent className="p-6 pt-0">
               <CardDescription className="text-gray-600">
                 Thrill-seeking expeditions, from safaris to mountain treks, designed for the adventurous spirit.
+              </CardDescription>
+            </CardContent>
+          </Card>
+          <Card className="bg-white shadow-lg hover:shadow-xl transition-shadow duration-300">
+            <CardHeader className="flex flex-col items-center text-center p-6">
+              <UsersIcon className="h-12 w-12 text-blue-600 mb-4" />
+              <CardTitle className="text-xl font-semibold text-blue-700">Group Travel Planning</CardTitle>
+            </CardHeader>
+            <CardContent className="p-6 pt-0">
+              <CardDescription className="text-gray-600">
+                Effortlessly plan unforgettable trips for your family, friends, or colleagues. From reunions to
+                corporate retreats, Richard will handle all the details, ensuring a seamless and memorable group
+                experience.
               </CardDescription>
             </CardContent>
           </Card>
