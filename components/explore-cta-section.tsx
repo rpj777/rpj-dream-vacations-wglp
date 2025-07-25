@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button"
 export function ExploreCtaSection() {
   return (
     <section className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-r from-blue-600 to-blue-400 text-white text-center">
-      <div className="container px-4 md:px-6 space-y-6">
+      <div className="container mx-auto px-4 md:px-6 space-y-6">
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight drop-shadow-md">
           Explore Dream Vacations with Richard Johnson & Travel Advisors Group
         </h2>

@@ -4,7 +4,7 @@ import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/com
 export function ServicesSection() {
   return (
     <section id="services" className="w-full py-8 md:py-16 lg:py-32 bg-blue-100">
-      <div className="container px-4 md:px-6 text-center">
+      <div className="container mx-auto px-4 md:px-6 text-center">
         <div className="space-y-4 mb-12">
           <h2 className="text-2xl md:text-3xl lg:text-5xl font-bold tracking-tight text-blue-800">
             Our Specialized Travel Services
@@ -29,7 +29,7 @@ export function ServicesSection() {
           <Card className="bg-white shadow-lg hover:shadow-xl transition-shadow duration-300">
             <CardHeader className="flex flex-col items-center text-center p-6">
               <HotelIcon className="h-12 w-12 text-blue-600 mb-4" />
-              <CardTitle className="text-xl font-semibold text-blue-700">Sandels Resorts</CardTitle>
+              <CardTitle className="text-xl font-semibold text-blue-700">Sandals Resorts</CardTitle>
             </CardHeader>
             <CardContent className="p-6 pt-0">
               <CardDescription className="text-gray-600">
@@ -86,7 +86,7 @@ export function ServicesSection() {
           <Card className="bg-white shadow-lg hover:shadow-xl transition-shadow duration-300">
             <CardHeader className="flex flex-col items-center text-center p-6">
               <MapPinIcon className="h-12 w-12 text-blue-600 mb-4" />
-              <CardTitle className="text-xl font-semibold text-blue-700">Custom Design Trips</CardTitle>
+              <CardTitle className="text-xl font-semibold text-blue-700">Custom itinerary Trips</CardTitle>
             </CardHeader>
             <CardContent className="p-6 pt-0">
               <CardDescription className="text-gray-600">

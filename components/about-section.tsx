@@ -3,7 +3,7 @@ import Image from "next/image"
 export function AboutSection() {
   return (
     <section id="about" className="w-full py-8 md:py-16 lg:py-32 bg-gradient-to-b from-white to-blue-50">
-      <div className="container px-4 md:px-6">
+      <div className="container mx-auto px-4 md:px-6">
         <div className="grid gap-10 lg:grid-cols-2 items-center">
           <div className="space-y-4">
             <h2 className="text-2xl md:text-3xl lg:text-5xl font-bold tracking-tight text-blue-800">
