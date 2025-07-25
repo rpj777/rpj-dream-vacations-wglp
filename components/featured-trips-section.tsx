@@ -228,6 +228,23 @@ export function FeaturedTripsSection() {
               </div>
             </Card>
           </div>
+          {/* YouTube Video Embed */}
+          <div className="mt-12 w-full max-w-4xl mx-auto">
+            <h3 className="text-xl md:text-2xl lg:text-3xl font-bold tracking-tight text-blue-700 mb-6 text-center">
+              Experience Sandals: Watch Our Video
+            </h3>
+            <div className="relative w-full" style={{ paddingBottom: "56.25%" /* 16:9 Aspect Ratio */ }}>
+              <iframe
+                className="absolute top-0 left-0 w-full h-full rounded-lg shadow-xl"
+                src="https://www.youtube.com/embed/VD0d2jMGHso"
+                title="YouTube video player"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
+              ></iframe>
+            </div>
+          </div>
         </div>
       </div>
     </section>
