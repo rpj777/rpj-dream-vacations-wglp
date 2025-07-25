@@ -126,56 +126,87 @@ export function FeaturedTripsSection() {
             like no other. Experience world-class service, gourmet dining, and exclusive itineraries to the most
             desirable destinations across the globe, all while enjoying the spacious comfort of a premium vessel.
           </p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             <Card className="bg-white shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col">
               <Image
-                src="/luxury-caribbean-cruise.png"
-                alt="Caribbean Luxury Cruise"
+                src="/seabourn-panama-canal-passage.png"
+                alt="Seabourn Panama Canal Passage"
                 width={400}
                 height={200}
                 className="w-full h-48 object-cover rounded-t-lg"
               />
               <CardHeader className="p-4 pb-2">
-                <CardTitle className="text-lg font-semibold text-blue-700">Caribbean Grand Voyage</CardTitle>
+                <CardTitle className="text-lg font-semibold text-blue-700">
+                  Seabourn: 19-Day Panama Canal Passage
+                </CardTitle>
               </CardHeader>
               <CardContent className="p-4 pt-0 flex-grow">
                 <CardDescription className="text-gray-600 text-sm">
-                  Indulge in unparalleled luxury across the turquoise waters of the Caribbean. Discover secluded
-                  beaches, vibrant cultures, and exquisite onboard amenities. From private island escapes to vibrant
-                  port cities, every moment is crafted for relaxation and adventure. Let the gentle sea breeze and
-                  stunning sunsets define your perfect tropical getaway.
+                  Embark on an epic 19-day journey through the iconic Panama Canal with Seabourn. From Long Beach to
+                  Miami, discover the vibrant cultures of Mexico and Guatemala, and marvel at one of the world's
+                  greatest engineering feats. Enjoy Seabourn's ultra-luxury, all-suite accommodations, and personalized
+                  service for an unforgettable transoceanic adventure.
                 </CardDescription>
               </CardContent>
               <CardFooter className="p-4 pt-0">
                 <Link href="#contact" className="w-full">
-                  <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white">Explore Caribbean Luxury</Button>
+                  <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white">Explore the Panama Canal</Button>
                 </Link>
               </CardFooter>
             </Card>
             <Card className="bg-white shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col">
               <Image
-                src="/alaskan-cruise.png"
-                alt="Alaskan Luxury Cruise"
+                src="/viking-northern-lights-cruise.png"
+                alt="Viking Ocean Cruise Northern Lights"
                 width={400}
                 height={200}
                 className="w-full h-48 object-cover rounded-t-lg"
               />
               <CardHeader className="p-4 pb-2">
-                <CardTitle className="text-lg font-semibold text-blue-700">Alaskan Wilderness Expedition</CardTitle>
+                <CardTitle className="text-lg font-semibold text-blue-700">
+                  Viking: In Search of the Northern Lights
+                </CardTitle>
               </CardHeader>
               <CardContent className="p-4 pt-0 flex-grow">
                 <CardDescription className="text-gray-600 text-sm">
-                  Discover the majestic beauty of Alaska on an all-inclusive luxury cruise. Witness stunning glaciers,
-                  abundant wildlife, and breathtaking landscapes from your elegant ship. Experience the thrill of
-                  glacier calving, spot whales breaching, and explore charming frontier towns. This expedition offers a
-                  unique blend of rugged wilderness and refined comfort, creating memories that will last a lifetime.
+                  Chase the elusive Aurora Borealis on a breathtaking Viking Ocean cruise to the Arctic. From London to
+                  Bergen, explore the stunning landscapes of Norway, visit charming coastal towns, and delve into Viking
+                  history. With included excursions and cultural insights, this journey promises an unforgettable
+                  encounter with nature's most spectacular light show.
                 </CardDescription>
               </CardContent>
               <CardFooter className="p-4 pt-0">
                 <Link href="#contact" className="w-full">
                   <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white">
-                    Journey to Alaskan Wonders
+                    Witness the Northern Lights
                   </Button>
+                </Link>
+              </CardFooter>
+            </Card>
+            <Card className="bg-white shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col">
+              <Image
+                src="/seabourn-southern-caribbean-holiday.png"
+                alt="Seabourn Southern Caribbean Cruise"
+                width={400}
+                height={200}
+                className="w-full h-48 object-cover rounded-t-lg"
+              />
+              <CardHeader className="p-4 pb-2">
+                <CardTitle className="text-lg font-semibold text-blue-700">
+                  Seabourn: 12-Day Southern Caribbean Holiday
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="p-4 pt-0 flex-grow">
+                <CardDescription className="text-gray-600 text-sm">
+                  Escape to paradise on a 12-day Southern Caribbean holiday with Seabourn. From Bridgetown, Barbados,
+                  explore the vibrant islands of St. Lucia, Aruba, Bonaire, and Curaçao. Indulge in pristine beaches,
+                  crystal-clear waters, and rich local cultures, all while enjoying Seabourn's unparalleled luxury and
+                  intimate ship experience.
+                </CardDescription>
+              </CardContent>
+              <CardFooter className="p-4 pt-0">
+                <Link href="#contact" className="w-full">
+                  <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white">Discover Caribbean Bliss</Button>
                 </Link>
               </CardFooter>
             </Card>
