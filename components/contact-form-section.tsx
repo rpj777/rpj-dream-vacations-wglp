@@ -8,6 +8,8 @@ import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Label } from "@/components/ui/label"
 import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from "@/components/ui/card"
+import { PhoneIcon } from "lucide-react" // Import PhoneIcon
+import Link from "next/link" // Import Link
 
 export function ContactFormSection() {
   const [formData, setFormData] = useState({
@@ -73,6 +75,13 @@ export function ContactFormSection() {
           </h2>
           <p className="max-w-2xl mx-auto text-base md:text-lg text-gray-700">
             Contact Richard Johnson today for a personalized consultation. Let's make your travel dreams a reality!
+          </p>
+          <p className="text-lg md:text-xl font-semibold text-blue-700 flex items-center justify-center gap-2">
+            <PhoneIcon className="h-6 w-6" />
+            <span>Prefer to call? Reach us at: </span>
+            <Link href="tel:+14079512398" className="text-blue-600 hover:underline">
+              (407) 951-2398
+            </Link>
           </p>
         </div>
         <Card className="w-full max-w-lg shadow-xl border-blue-200">

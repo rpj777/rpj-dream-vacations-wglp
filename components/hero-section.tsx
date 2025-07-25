@@ -1,6 +1,7 @@
 import Link from "next/link"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
+import { PhoneIcon } from "lucide-react" // Import PhoneIcon
 
 export function HeroSection() {
   return (
@@ -22,11 +23,20 @@ export function HeroSection() {
           Richard Johnson Travel Advisors Group: Your Expert Travel Agent in Winter Garden, FL, crafting personalized,
           unforgettable journeys.
         </p>
-        <Link href="#contact">
-          <Button className="bg-blue-500 hover:bg-blue-600 text-white text-base px-6 py-2 md:text-lg md:px-8 md:py-3 rounded-full shadow-lg transition-all duration-300 transform hover:scale-105">
-            Plan Your Trip Now
-          </Button>
-        </Link>
+        <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
+          <Link href="#contact">
+            <Button className="bg-blue-500 hover:bg-blue-600 text-white text-base px-6 py-2 md:text-lg md:px-8 md:py-3 rounded-full shadow-lg transition-all duration-300 transform hover:scale-105">
+              Plan Your Trip Now
+            </Button>
+          </Link>
+          <Link
+            href="tel:+14079512398"
+            className="text-white text-base md:text-lg font-medium hover:underline flex items-center gap-2"
+          >
+            <PhoneIcon className="h-5 w-5" />
+            <span>Or Call: (407) 951-2398</span>
+          </Link>
+        </div>
       </div>
     </section>
   )

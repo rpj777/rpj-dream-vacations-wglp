@@ -1,6 +1,6 @@
 import Link from "next/link"
 import Image from "next/image"
-import { MenuIcon } from "lucide-react"
+import { MenuIcon, PhoneIcon } from "lucide-react" // Import PhoneIcon
 import { Button } from "@/components/ui/button"
 import { SheetTrigger, SheetContent, Sheet } from "@/components/ui/sheet"
 
@@ -8,8 +8,6 @@ export function Header() {
   return (
     <header className="w-full h-16 flex items-center bg-gradient-to-r from-blue-600 to-blue-400 text-white shadow-md">
       <div className="container mx-auto px-4 md:px-6 flex items-center justify-between">
-        {" "}
-        {/* Added container and flex */}
         <Link href="#" className="flex items-center justify-center gap-2">
           <Image
             src="/dv-logo-white.png"
@@ -20,7 +18,7 @@ export function Header() {
             priority
           />
         </Link>
-        <nav className="ml-auto hidden lg:flex gap-4 lg:gap-6">
+        <nav className="ml-auto hidden lg:flex items-center gap-4 lg:gap-6">
           <Link href="#" className="text-sm font-medium hover:underline underline-offset-4">
             Home
           </Link>
@@ -32,6 +30,12 @@ export function Header() {
           </Link>
           <Link href="#contact" className="text-sm font-medium hover:underline underline-offset-4">
             Contact
+          </Link>
+          <Link href="tel:+14079512398" className="ml-4">
+            <Button className="bg-white text-blue-600 hover:bg-gray-100 px-4 py-2 rounded-full text-sm font-medium flex items-center gap-2">
+              <PhoneIcon className="h-4 w-4" />
+              <span>(407) 951-2398</span>
+            </Button>
           </Link>
         </nav>
         <Sheet>
@@ -54,6 +58,12 @@ export function Header() {
               </Link>
               <Link href="#contact" className="text-lg font-medium">
                 Contact
+              </Link>
+              <Link href="tel:+14079512398" className="mt-4">
+                <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white text-base py-2 flex items-center justify-center gap-2">
+                  <PhoneIcon className="h-5 w-5" />
+                  <span>Call Us: (407) 951-2398</span>
+                </Button>
               </Link>
             </div>
           </SheetContent>

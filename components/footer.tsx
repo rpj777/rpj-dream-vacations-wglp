@@ -6,8 +6,6 @@ export function Footer() {
   return (
     <footer className="bg-blue-800 text-white py-6 md:py-12">
       <div className="container mx-auto px-4 md:px-6">
-        {" "}
-        {/* Added container and px */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
           <div className="space-y-4">
             <Link href="#" className="flex items-center justify-start">
@@ -49,7 +47,7 @@ export function Footer() {
             <div className="flex flex-col space-y-2">
               <Link href="tel:+14079512398" className="flex items-center gap-2 text-sm text-blue-200 hover:underline">
                 <PhoneIcon className="h-5 w-5" />
-                <span>+1 (407) 951-2398</span> {/* Replace with actual phone number */}
+                <span>+1 (407) 951-2398</span> {/* This is already a clickable tel: link */}
               </Link>
               <Link
                 href="mailto:rpjohnson@dreamvacations.com"
