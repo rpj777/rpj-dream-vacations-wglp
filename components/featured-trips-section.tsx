@@ -32,83 +32,84 @@ export function FeaturedTripsSection() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             <Card className="bg-white shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col">
               <Image
-                src="/amawaterways-rhine-castles-vineyards.png"
-                alt="AmaWaterways River Cruise on the Rhine"
+                src="/uniworld-danube-holiday-markets.png"
+                alt="Uniworld River Princess on Danube"
                 width={400}
                 height={200}
                 className="w-full h-48 object-cover rounded-t-lg"
               />
               <CardHeader className="p-4 pb-2">
-                <CardTitle className="text-lg font-semibold text-blue-700">AmaWaterways: Enchanting Rhine</CardTitle>
+                <CardTitle className="text-lg font-semibold text-blue-700">
+                  Uniworld: 7 Night Danube Holiday Markets Eastbound
+                </CardTitle>
               </CardHeader>
               <CardContent className="p-4 pt-0 flex-grow">
                 <CardDescription className="text-gray-600 text-sm">
-                  Embark on a fairytale journey along the legendary Rhine River with AmaWaterways. Sail through Germany,
-                  France, and Switzerland, past medieval castles, charming vineyards, and picturesque villages. Enjoy
-                  exquisite gourmet dining, included excursions, and personalized service on a ship designed for your
-                  ultimate comfort. This is more than a cruise; it's an immersive cultural tapestry waiting to be
-                  unraveled.
+                  Step aboard the luxurious River Princess for an enchanting 7-night journey from Passau to Budapest.
+                  Immerse yourself in the festive spirit of Europe's Christmas markets, explore historic cities like
+                  Vienna and Bratislava, and enjoy Uniworld's signature all-inclusive luxury, including gourmet dining,
+                  unlimited beverages, and captivating excursions. This is the perfect holiday escape!
                 </CardDescription>
               </CardContent>
               <CardFooter className="p-4 pt-0">
                 <Link href="#contact" className="w-full">
-                  <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white">Book Your Rhine Adventure</Button>
+                  <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white">Discover Holiday Magic</Button>
                 </Link>
               </CardFooter>
             </Card>
             <Card className="bg-white shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col">
               <Image
-                src="/uniworld-river-cruise.png"
-                alt="Uniworld River Cruise on the Rhine"
+                src="/uniworld-maria-theresa-christmas-new-years.png"
+                alt="Uniworld S.S. Maria Theresa on Danube"
                 width={400}
                 height={200}
                 className="w-full h-48 object-cover rounded-t-lg"
               />
               <CardHeader className="p-4 pb-2">
-                <CardTitle className="text-lg font-semibold text-blue-700">Uniworld: Castles Along the Rhine</CardTitle>
+                <CardTitle className="text-lg font-semibold text-blue-700">
+                  Uniworld: 10 Night Enchanting Christmas & New Years
+                </CardTitle>
               </CardHeader>
               <CardContent className="p-4 pt-0 flex-grow">
                 <CardDescription className="text-gray-600 text-sm">
-                  Step into a world of unparalleled luxury with Uniworld's "Castles Along the Rhine." This all-inclusive
-                  boutique river cruise offers a truly opulent experience, from sumptuously appointed staterooms to
-                  Michelin-inspired cuisine. Discover the romance of the Rhine as you glide past ancient fortresses and
-                  charming towns, with unique, immersive excursions designed to bring each destination to life. Prepare
-                  for an unforgettable journey where every detail is perfected.
+                  Celebrate the most wonderful time of the year on the opulent S.S. Maria Theresa. This 10-night
+                  all-inclusive voyage from Munich to Budapest offers an unforgettable festive experience. Glide through
+                  snow-dusted landscapes, visit charming Christmas markets, and ring in the New Year in style, all while
+                  enjoying Uniworld's award-winning service and exquisite amenities.
                 </CardDescription>
               </CardContent>
               <CardFooter className="p-4 pt-0">
                 <Link href="#contact" className="w-full">
                   <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white">
-                    Experience Uniworld Luxury
+                    Celebrate the Holidays in Luxury
                   </Button>
                 </Link>
               </CardFooter>
             </Card>
             <Card className="bg-white shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col">
               <Image
-                src="/viking-longship-budapest-amsterdam.png"
-                alt="Viking Grand European Tour"
+                src="/viking-grand-european-tour.png"
+                alt="Viking Longship on Grand European Tour"
                 width={400}
                 height={200}
                 className="w-full h-48 object-cover rounded-t-lg"
               />
               <CardHeader className="p-4 pb-2">
-                <CardTitle className="text-lg font-semibold text-blue-700">Viking: Grand European Tour</CardTitle>
+                <CardTitle className="text-lg font-semibold text-blue-700">
+                  Viking: Grand European Tour (Budapest to Amsterdam)
+                </CardTitle>
               </CardHeader>
               <CardContent className="p-4 pt-0 flex-grow">
                 <CardDescription className="text-gray-600 text-sm">
-                  Embark on Viking's most iconic river journey, the "Grand European Tour," from Budapest to Amsterdam.
-                  This epic 15-day voyage connects the Danube, Main, and Rhine rivers, allowing you to discover 15
-                  cities in 8 countries. With included excursions, cultural enrichment, and the comfort of a Viking
-                  Longship, you'll explore magnificent capitals, charming villages, and stunning natural beauty. This is
-                  the definitive European river experience.
+                  Embark on Viking's most iconic 15-day river journey, connecting the Danube, Main, and Rhine rivers.
+                  From the vibrant streets of Budapest to the canals of Amsterdam, explore 15 cities in 8 countries.
+                  Enjoy included excursions, cultural immersion, and the serene comfort of a Viking Longship. This is
+                  the definitive European river experience, meticulously crafted for curious travelers.
                 </CardDescription>
               </CardContent>
               <CardFooter className="p-4 pt-0">
                 <Link href="#contact" className="w-full">
-                  <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white">
-                    Discover Europe with Viking
-                  </Button>
+                  <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white">Experience the Grand Tour</Button>
                 </Link>
               </CardFooter>
             </Card>
