@@ -18,7 +18,7 @@ export function ServicesSection() {
           <Card className="bg-white shadow-lg hover:shadow-xl transition-shadow duration-300">
             <CardHeader className="flex flex-col items-center text-center p-6">
               <ShipIcon className="h-12 w-12 text-blue-600 mb-4" />
-              <CardTitle className="text-xl font-semibold text-blue-700">Cruises</CardTitle>
+              <CardTitle className="text-xl font-semibold text-blue-700">Worldwide Cruises</CardTitle>
             </CardHeader>
             <CardContent className="p-6 pt-0">
               <CardDescription className="text-gray-600">
@@ -29,29 +29,29 @@ export function ServicesSection() {
           <Card className="bg-white shadow-lg hover:shadow-xl transition-shadow duration-300">
             <CardHeader className="flex flex-col items-center text-center p-6">
               <HotelIcon className="h-12 w-12 text-blue-600 mb-4" />
-              <CardTitle className="text-xl font-semibold text-blue-700">All-Inclusive Resorts</CardTitle>
+              <CardTitle className="text-xl font-semibold text-blue-700">Sandels Resorts</CardTitle>
             </CardHeader>
             <CardContent className="p-6 pt-0">
               <CardDescription className="text-gray-600">
-                Enjoy hassle-free vacations with everything included, from dining to activities.
+                All Inclusive Resort! Enjoy hassle-free vacations with everything included, from dining to activities.
               </CardDescription>
             </CardContent>
           </Card>
           <Card className="bg-white shadow-lg hover:shadow-xl transition-shadow duration-300">
             <CardHeader className="flex flex-col items-center text-center p-6">
               <FamilyIcon className="h-12 w-12 text-blue-600 mb-4" />
-              <CardTitle className="text-xl font-semibold text-blue-700">Family Vacations</CardTitle>
+              <CardTitle className="text-xl font-semibold text-blue-700">Custom Family Vacations</CardTitle>
             </CardHeader>
             <CardContent className="p-6 pt-0">
               <CardDescription className="text-gray-600">
-                Create unforgettable memories with custom-designed trips for the whole family.
+                Create unforgettable memories with custom-designed itineraries for the whole family.
               </CardDescription>
             </CardContent>
           </Card>
           <Card className="bg-white shadow-lg hover:shadow-xl transition-shadow duration-300">
             <CardHeader className="flex flex-col items-center text-center p-6">
               <ShipIcon className="h-12 w-12 text-blue-600 mb-4" />
-              <CardTitle className="text-xl font-semibold text-blue-700">European Cruises</CardTitle>
+              <CardTitle className="text-xl font-semibold text-blue-700">River Cruises</CardTitle>
             </CardHeader>
             <CardContent className="p-6 pt-0">
               <CardDescription className="text-gray-600">
@@ -85,23 +85,23 @@ export function ServicesSection() {
           </Card>
           <Card className="bg-white shadow-lg hover:shadow-xl transition-shadow duration-300">
             <CardHeader className="flex flex-col items-center text-center p-6">
+              <MapPinIcon className="h-12 w-12 text-blue-600 mb-4" />
+              <CardTitle className="text-xl font-semibold text-blue-700">Custom Design Trips</CardTitle>
+            </CardHeader>
+            <CardContent className="p-6 pt-0">
+              <CardDescription className="text-gray-600">
+                For the couple or whole family. Fully customized travel plans to any destination, built around your unique desires.
+              </CardDescription>
+            </CardContent>
+          </Card>
+           <Card className="bg-white shadow-lg hover:shadow-xl transition-shadow duration-300">
+            <CardHeader className="flex flex-col items-center text-center p-6">
               <CompassIcon className="h-12 w-12 text-blue-600 mb-4" />
               <CardTitle className="text-xl font-semibold text-blue-700">Adventure Travel</CardTitle>
             </CardHeader>
             <CardContent className="p-6 pt-0">
               <CardDescription className="text-gray-600">
                 Thrill-seeking expeditions, from safaris to mountain treks, designed for the adventurous spirit.
-              </CardDescription>
-            </CardContent>
-          </Card>
-          <Card className="bg-white shadow-lg hover:shadow-xl transition-shadow duration-300">
-            <CardHeader className="flex flex-col items-center text-center p-6">
-              <MapPinIcon className="h-12 w-12 text-blue-600 mb-4" />
-              <CardTitle className="text-xl font-semibold text-blue-700">Custom Itineraries</CardTitle>
-            </CardHeader>
-            <CardContent className="p-6 pt-0">
-              <CardDescription className="text-gray-600">
-                Fully customized travel plans to any destination, built around your unique desires.
               </CardDescription>
             </CardContent>
           </Card>
