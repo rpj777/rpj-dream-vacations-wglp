@@ -6,7 +6,8 @@ import { ContactFormSection } from "@/components/contact-form-section"
 import { Footer } from "@/components/footer"
 import { Chatbot } from "@/components/chatbot"
 import { ExploreCtaSection } from "@/components/explore-cta-section"
-import { ScrollToTopButton } from "@/components/scroll-to-top-button" // Import the new component
+import { ScrollToTopButton } from "@/components/scroll-to-top-button"
+import { FeaturedTripsSection } from "@/components/featured-trips-section" // Import the new component
 
 export default function Home() {
   const jsonLd = {
@@ -52,11 +53,12 @@ export default function Home() {
         <HeroSection />
         <AboutSection />
         <ServicesSection />
+        <FeaturedTripsSection /> {/* Add the new section here */}
         <ContactFormSection />
         <ExploreCtaSection />
       </main>
       <Chatbot />
-      <ScrollToTopButton /> {/* Add the scroll-to-top button here */}
+      <ScrollToTopButton />
       <Footer />
     </div>
   )
