@@ -8,6 +8,7 @@ import { Chatbot } from "@/components/chatbot"
 import { ExploreCtaSection } from "@/components/explore-cta-section"
 import { ScrollToTopButton } from "@/components/scroll-to-top-button"
 import { FeaturedTripsSection } from "@/components/featured-trips-section" // Import the new component
+import { BlogSection } from "@/components/blog-section" // Import BlogSection
 
 export default function Home() {
   const jsonLd = {
@@ -52,6 +53,7 @@ export default function Home() {
       <main className="flex-1">
         <HeroSection />
         <AboutSection />
+        <BlogSection /> {/* Added BlogSection here */}
         <ServicesSection />
         <FeaturedTripsSection /> {/* Add the new section here */}
         <ContactFormSection />

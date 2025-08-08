@@ -26,5 +26,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "yearly",
       priority: 0.7,
     },
+    {
+      url: "https://your-domain.com/blog/culinary-adventures-2025",
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
   ]
 }
